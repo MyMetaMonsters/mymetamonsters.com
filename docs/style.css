@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap');
+
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background-color: #30336b;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: "Libre Franklin";
+    line-height: 2;
+   
+}
+
+/* @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+h1.nftAttributeSelectHeader {
+    font-size: 90px;
+}
+
+#headerBanner {
+    /* background-color: #ccc; */
+    padding: 50px 0;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-image: url('img/website_header.svg');
+      background-repeat: no-repeat;
+      background-size: 1100px;
+      background-position: top right;
+}
+
+#freeMint {
+    background-color: #c0392b; padding: 5px; border-radius: 5px
+}
+
+#lockNFT, #randomiseNFT, #signinWithMetaMask {
+    background-color: #fff;
+    color: rgb(16, 13, 13);
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 15px 15px 15px 70px;
+    margin: 20px 0;
+}
+
+#signinWithMetaMask {
+    background-image: url('img/metamasklogo.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+#randomiseNFT {
+    background-image: url('img/icons/random.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 50px;
+}
+
+#lockNFT {
+    background-image: url('img/icons/lock.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 50px;
+}
+
+
+#nftActionButtons {
+    position: absolute; 
+    bottom: -75px; 
+    width: 500px;
+}
+#nftActionButtons p {
+    text-align: center;
+}
+#nftActionButtons p span:nth-child(1) {
+    margin-right: 50px;
+}
+#signinWithMetaMask {
+    
+}
+
+#signinWithMetaMask:hover, #lockNFT:hover, #randomiseNFT:hover {
+    cursor: pointer;
+}
+#section1 {
+    background-image: url('img/website_top_banner.svg');
+    background-repeat: no-repeat;
+    /* background-position: top 65px left 0px; */
+    padding-top: 70px;
+}
+.wrapper {
+	display: flex;
+  	flex-wrap: wrap;
+      
+}
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#left { 
+	flex-grow: 1;
+	min-width: 400px;
+}
+#right { 
+	flex-grow: 1;
+	margin-top: 40px;
+	min-height: 400px;
+	min-width: 400px;
+}
+
+
+
+#nftHolder {
+    width: 500px;
+    height: 500px;
+    max-width: 90%;
+    border: 3px solid #000;
+    /* background-color: #c7c7c7; */
+   
+}
+
+.nftLayer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.vh {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#chooseNFTAttributes {
+    /* background-color: #ccc; */
+    height: 600px;
+    width: 500px;
+    margin: 30px auto auto auto;
+}
+
+
+/* NFT BUILD UP */
+#nftLayer_background {
+    background-color: #fff
+}
+
+.nftAttributeSelectHeader {
+    font-family: "Gloria Hallelujah";
+    padding: 10px 0;
+    font-size: 50px;
+    margin-bottom: 30px;
+    line-height: 1;
+   
+}
+.section_title {
+    font-size: 20px;
+}
+
+/* NFT BUILD UP MISC */
+#right ul {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+#right ul li img {
+    max-width: 100%;
+}
+
+#right ul li:hover {
+    cursor: pointer;
+}
+
+#right ul li {
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    float: left;
+    margin-right: 20px;
+    padding: 5px;
+}
+ul#background_colors li:nth-child(1), #nftLayer_background.nftLayer_background_none  {
+    background-color: #fff;
+}
+ul#background_colors li:nth-child(2), #nftLayer_background.nftLayer_background_blue  {
+    background-color: #00a8ff;
+}
+ul#background_colors li:nth-child(3) , #nftLayer_background.nftLayer_background_yellow {
+    background-color: #fbc531;
+}
+
+ul#background_colors li:nth-child(4), #nftLayer_background.nftLayer_background_hollyhock  {
+    background-color: #833471
+}
+
+ul#background_colors li:nth-child(5) , #nftLayer_background.nftLayer_background_purple {
+    background-color: #9980FA
+}
+
+ul#background_colors li:nth-child(6), #nftLayer_background.nftLayer_background_green {
+    background-color: #44bd32;
+}
+ul#background_colors li:nth-child(7), #nftLayer_background.nftLayer_background_patchwork {
+    background-image: url('img/background_patchwork.svg');
+}
+
+ul#background_colors li:nth-child(7) {
+    background-size: cover;
+}
+
+
+.nftLayer_body {
+    background-image: url('img/body_plain.svg');
+}
+.nftLayer_head_horns {
+    background-image: url('img/head_horns.svg');
+}
+.nftLayer_head_hat {
+    background-image: url('img/head_hat.svg');
+}
+.nftLayer_head_antenna {
+    background-image: url('img/head_antenna.svg');
+}
+.nftLayer_head_killer_plants {
+    background-image: url('img/head_killer_plants.svg');
+}
+.nftLayer_head_wizard_hat {
+    background-image: url('img/head_wizard_hat.svg');
+}
+.nftLayer_head_mushrooms {
+    background-image: url('img/head_mushrooms.svg');
+}
+
+.nftLayer_eyes_three {
+    background-image: url('img/eyes_three.svg');
+}
+.nftLayer_eyes_one {
+    background-image: url('img/eyes_one.svg');
+}
+.nftLayer_eyes_many {
+    background-image: url('img/eyes_many.svg');
+}
+
+.nftLayer_eyes_three_vertical {
+    background-image: url('img/eyes_three_vertical.svg');
+}
+.nftLayer_eyes_triangle {
+    background-image: url('img/eyes_triangle.svg');
+}
+.nftLayer_eyes_sad {
+    background-image: url('img/eyes_sad.svg');
+}
+.nftLayer_arms_tentacles {
+    background-image: url('img/arms_tentacles.svg');
+}
+.nftLayer_arms_spread_love{
+    background-image: url('img/arms_spread_love.svg');
+}
+.nftLayer_arms_dancing_claws {
+    background-image: url('img/arms_dancing_claws.svg');
+}
+.nftLayer_arms_wizard_staff {
+    background-image: url('img/arms_wizard_staff.svg');
+}
+.nftLayer_arms_wings {
+    background-image: url('img/arms_wings.svg');
+}
+
+.nftLayer_mouth_gobby {
+    background-image: url('img/mouth_gobby.svg');
+}
+
+.nftLayer_mouth_smiley {
+    background-image: url('img/mouth_smiley.svg');
+}
+
+.nftLayer_mouth_spotty {
+    background-image: url('img/mouth_spotty.svg');
+}
+.nftLayer_mouth_stitched {
+    background-image: url('img/mouth_stitched.svg');
+}
+.nftLayer_mouth_goofy {
+    background-image: url('img/mouth_goofy.svg');
+}
+
+.nftLayer_legs_tentacles {
+    background-image: url('img/legs_tentacles.svg');
+}
+
+.nftLayer_legs_four {
+    background-image: url('img/legs_four.svg');
+}
+.nftLayer_legs_rattle_snake {
+    background-image: url('img/legs_rattle_snake.svg');
+}
+
+.nftLayer_legs_claws {
+    background-image: url('img/legs_claws.svg');
+}
+
+.nftLayer_legs_eggs {
+    background-image: url('img/legs_eggs.svg');
+}
+
+
+@media (min-width: 800px) {
+    #headerBanner, #left {
+        min-height: 100vh;
+    }
+
+    #left {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #headerBanner .container {
+        margin-top: 200px;
+    }
+}
