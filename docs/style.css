@@ -163,22 +163,10 @@ h1.nftAttributeSelectHeader {
 	flex-grow: 1;
 	min-width: 400px;
 }
-#right { 
-	flex-grow: 1;
-	margin-top: 40px;
-	min-height: 400px;
-	min-width: 400px;
-}
-
-
-
-#nftHolder {
-    width: 500px;
-    height: 500px;
-    max-width: 90%;
-    border: 3px solid #000;
-    /* background-color: #c7c7c7; */
-   
+#hatchingEggHolder img {
+    position: absolute;
+    left: 0;
+    width: 400px;
 }
 
 .nftLayer {
@@ -238,10 +226,16 @@ h1.nftAttributeSelectHeader {
     #headerBanner .container {
         margin-top: 200px;
     }
+    #hatchingEggHolder img {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
     h1.nftAttributeSelectHeader {
         font-size: 18vw;
     }
+    
+
 }
+
