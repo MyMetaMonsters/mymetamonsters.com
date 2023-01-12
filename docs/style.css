@@ -172,7 +172,10 @@ h1.nftAttributeSelectHeader {
     left: 0;
     width: 400px;
 }
-
+#moreInfoButton a {
+    color: #fff;
+    text-decoration: none;
+}
 .nftLayer {
     position: absolute;
     width: 100%;
